@@ -1,29 +1,29 @@
 class Hurlx < Formula
   desc "Enhanced Hurl with import/export support for HTTP testing"
   homepage "https://github.com/itbaby/hurlx"
-  version "1.0.8"
+  version "1.0.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-#{version}-darwin-arm64"
-      sha256 "7772eed18bd88ad50a6f8e248622978310ab919ef75853fe45cb7a645363ebb1"
+      url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-darwin-arm64"
+      sha256 "0e017e3d58de8ba2c8a874cb7510f702cbeda2e33208247bf7d188a33c92bf70"
     end
     on_intel do
-      url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-#{version}-darwin-amd64"
-      sha256 "51dd6a4f9fe72b884b2409aac8ff8c5388be9f811a8ea0b18c46fd224e4d8db2"
+      url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-darwin-amd64"
+      sha256 "d04fe6817b89ef4e433a607d32be6cba80264d2194088622a86bd0a9ccffbaf0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-#{version}-linux-amd64"
-      sha256 "80cc277501c7a0ed4fd577d546937cf7e6c43208e1b286e8a5198106f953e073"
+      url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-linux-amd64"
+      sha256 "83ca4d6f19b5b4b7d89a4068cd9e603215f6728bb6619e0f767623b1f9709249"
     end
   end
 
   def install
-    bin.install "hurlx-#{version}-#{OS.kernel_name.downcase}-#{Hardware::CPU.arch}" => "hurlx"
+    bin.install "hurlx-#{OS.kernel_name.downcase}-#{Hardware::CPU.arch}" => "hurlx"
   end
 
   test do
