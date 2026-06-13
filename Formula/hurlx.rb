@@ -1,24 +1,24 @@
 class Hurlx < Formula
   desc "Enhanced Hurl with import/export support for HTTP testing"
   homepage "https://github.com/itbaby/hurlx"
-  version "1.0.13"
+  version "1.0.16"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-#{version}-darwin-arm64"
-      sha256 "7ad4dc7e5b4d7493c79aa01a0e1c77ae46016920dd0df6ff78bbe5bc04d529f5"
+      sha256 "1b6101ea8a6b8a5a96cb5b40b0a5a8a8bb9c08ae510960d27caa9ab6932671cb"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-#{version}-linux-amd64"
-      sha256 "99f10c59434e95d2da5e19faaf0d0931540be67f6381774cbb6ed2df3efbb185"
+      sha256 "452058e758cce786737fd37f54df47181eecefa12058c1f266233261e9bb1546"
     end
     on_arm do
       url "https://github.com/itbaby/hurlx/releases/download/v#{version}/hurlx-#{version}-linux-arm64"
-      sha256 "1a7e18c2d50606379ca5ccb8e28aca0c1abec8d297d96f08aa539404223ab436"
+      sha256 "272351fe38cdfd700e0afc3fbdda9e5df1f2d5ab5a9e8d66f05ca02dc2b2bb51"
     end
   end
 
